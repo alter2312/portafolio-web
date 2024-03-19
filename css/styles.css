@@ -1,1 +1,22 @@
-  
+.presentacion {
+  background-color: #030303;
+  position: relative;
+}
+.presentacion::before,
+.presentacion::after {
+  content: "";
+  width: 4rem;
+  height: 4rem;
+  background: #059669;
+  position: absolute;
+  border-radius: 100%;
+  filter: blur(100px);
+}
+.presentacion::before {
+  left: 0;
+  top: 0;
+}
+.presentacion::after {
+  left: 90%;
+  top: 90%;
+}
