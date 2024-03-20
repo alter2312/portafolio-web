@@ -1,6 +1,7 @@
 .presentacion {
   background-color: #030303;
   position: relative;
+  gap: clamp(1rem, 0.2rem, 1rem);
 }
 .presentacion::before,
 .presentacion::after {
@@ -19,4 +20,30 @@
 .presentacion::after {
   left: 90%;
   top: 90%;
+}
+.presentacion h1 {
+  font-size: clamp(8vw, 15vw, 10rem);
+}
+.presentacion h5 {
+  font-size: clamp(3vw, 1rem, 50vw);
+}
+/* .sobre-mi::before,
+.sobre-mi::after {
+  content: "";
+  width: 6rem;
+  height: 6rem;
+  clip-path: polygon(50% 0, 100% 38%, 81% 100%, 19% 100%, 0 38%);
+  border: 100px solid black;
+  position: absolute;
+} */
+
+.pentagono {
+  width: 100px; /* Ancho del pentágono */
+  height: 100px; /* Altura del pentágono */
+  position: relative;
+  background-color: transparent;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  border: 20px solid #333; /* Grosor y color del borde */
+  border-radius: 5px;
+  position: absolute; /* Radio del borde */
 }
