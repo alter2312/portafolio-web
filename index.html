@@ -5,18 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/cea33d77ef.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/normalize.css">
+
 </head>
 
 <body class="size-full overflow-x-hidden p-0 mx-0">
-    <header>
+    <header
+        class="h-screen w-10 rounded-e-2xl text-neutral-50 flex overflow-x-hidden items-start justify-center pt-10 gap-7 fixed z-50 top-0 left-0 mr-10">
         <nav>
             <ol>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
             </ol>
         </nav>
     </header>
@@ -31,29 +35,34 @@
             <img src="img/icon-7.svg" class=" w-16 relative top-5" alt="">
         </section>
         <section class="sobre-mi w-scrren h-screen bg-neutral-950 flex flex-col items-center gap-10 py-10 relative ">
-            <h2 class="text-2xl text-neutral-50  font-bold ">Sobre mi</h2>
+            <h2 class="text-4xl text-neutral-50  font-bold ">Sobre mi</h2>
             <div class="w-screen flex items-center justify-around  h-4/5 ">
-                <div class=" flex flex-items-center justify-around">
-                    <div
-                        class="w-2/5 h-4/5 bg-neutral-800  text-neutral-50 text-justify flex flex-col gap-5 p-10 items-center justify-center rounded-3xl">
-                        <div class="">
+                <div class=" flex flex-items-center justify-center gap-20 px-10">
+                    <div class="flex flex-col justify-center w-2/4 relative right-20 gap-10">
+                        <div
+                            class=" content-text w-full h-full bg-neutral-800  text-neutral-50 flex flex-col gap-5 p-10 items-center justify-center rounded-3xl relative  text-wrap">
+                            <h3 class="text-2xl text-emerald-400 font-semibold ">Descripción</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem aperiam excepturi nemo ad
                                 quidem
                                 molestias, possimus aliquid veritatis blanditiis delectus?</p>
-                            <div class="flex flex-wrap w-full justify-center gap-3 ">
-                                <img src="img/icon-1.svg" alt="" class="w-9">
-                                <img src="img/icon-2.svg" alt="" class="w-9">
-                                <img src="img/icon-3.svg" alt="" class="w-9">
-                                <img src="img/icon-4.svg" alt="" class="w-9">
-                            </div>
+                        </div>
+                        <div class="">
+                            <h4 class="text-neutral-50 font-bold text-center m-2 text-xl">Proyectos destacados</h4>
+                            <figure class="flex w-full items-center justify-center gap-5 ">
+                                <img src="img/undraw_about_me_re_82bv.svg" class="w-2/5" alt="">
+                                <img src="img/undraw_about_me_re_82bv.svg" class="w-2/5" alt="">
+                            </figure>
                         </div>
                     </div>
-                    <img src="img/undraw_version_control_re_mg66.svg " alt="imagen" class="w-1/3 z-20">
                 </div>
-                <img src="img/hexagon-01-stroke-rounded.svg" class="absolute w-1/5 right-3 top-0 rotate-90 z-10" alt="">
-                <img src="img/hexagon-01-stroke-rounded.svg" class="absolute w-1/5 right-40 top-0 z-10 " alt="">
+                <img src="img/undraw_version_control_re_mg66.svg " alt="imagen" class="w-1/3 z-20 relative right-20">
+            </div>
+            <img src="img/hexagon-01-stroke-rounded.svg" class="absolute w-1/5 right-3 top-0 rotate-90 z-10" alt="">
+            <img src="img/hexagon-01-stroke-rounded.svg" class="absolute w-1/5 right-40 top-0 z-10 " alt="">
         </section>
-        <section class="session3"></section>
+        <section class="session3 w-screen h-screen">
+            <h2>Proyectos</h2>
+        </section>
         <section class="session4"></section>
         <section class="session5"></section>
     </main>

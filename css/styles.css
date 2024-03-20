@@ -1,3 +1,6 @@
+header {
+  background-color: #000;
+}
 .presentacion {
   background-color: #030303;
   position: relative;
@@ -27,23 +30,7 @@
 .presentacion h5 {
   font-size: clamp(3vw, 1rem, 50vw);
 }
-/* .sobre-mi::before,
-.sobre-mi::after {
-  content: "";
-  width: 6rem;
-  height: 6rem;
-  clip-path: polygon(50% 0, 100% 38%, 81% 100%, 19% 100%, 0 38%);
-  border: 100px solid black;
-  position: absolute;
-} */
-
-.pentagono {
-  width: 100px; /* Ancho del pentágono */
-  height: 100px; /* Altura del pentágono */
-  position: relative;
-  background-color: transparent;
-  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
-  border: 20px solid #333; /* Grosor y color del borde */
-  border-radius: 5px;
-  position: absolute; /* Radio del borde */
+.content-text {
+  box-shadow: 10px 0px 10px #059669, 10px 0px 20px #059669,
+    10px 0px 30px #059669, 10px 0px 40px #059669;
 }
