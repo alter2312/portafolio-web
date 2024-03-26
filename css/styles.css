@@ -1,12 +1,12 @@
-header {
+.header {
   background-color: #000000;
-}
-#header {
   width: 4rem;
+
   justify-content: center;
   overflow: hidden;
+  transition: width 0.2s linear;
 }
-.button-tougle {
+.button-toggle {
   width: 2.6rem;
   height: 2.4rem;
   display: flex;
@@ -20,11 +20,16 @@ header {
   left: 0.6rem;
   /* left: 90%; */
 }
-.button-tougle span {
+.button-toggle:hover span {
+  background-color: #059669;
+  transition: 0.2s linear;
+}
+.button-toggle span {
   width: 100%;
   height: 0.5rem;
-  background-color: #059669;
+  background-color: #f1f1f1;
   border-radius: 1rem;
+  transition: background-color 0.2s linear;
 }
 ol {
   display: flex;
@@ -36,18 +41,51 @@ ol {
   left: 1.5rem;
   /* left: 30%; */
 }
+nav ol li {
+  position: relative;
+  height: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+nav ol li a label {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 70%;
+  font-size: 0.6rem;
+}
+.label {
+  position: absolute;
+  left: -1rem;
+}
+label b {
+  display: inline-block;
+  width: 4rem;
+}
 nav ol li a {
   display: flex;
   gap: 3rem;
   width: 100%;
+  padding: 2rem 0;
+}
+nav ol li a:hover {
+  color: #0aeca5;
+  transition: 0.2s all ease-in;
+}
+nav ol li a:hover > label {
+  display: flex;
+  align-items: start;
+  justify-content: start;
 }
 nav ol li a i {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 2rem;
-  height: 2rem;
   position: relative;
+  height: 2rem;
+  width: 2rem;
 }
 .presentacion {
   background-color: #030303;
@@ -85,7 +123,6 @@ nav ol li a i {
 .session3 {
   background-color: #030303;
 }
-
 .parrafo-card {
   width: 80%;
   position: absolute;
@@ -99,6 +136,8 @@ nav ol li a i {
   flex-direction: column-reverse;
   align-items: center;
   overflow: hidden;
+  position: relative;
+  z-index: 20;
 }
 .session3 .card img {
   object-fit: cover;
@@ -125,4 +164,107 @@ nav ol li a i {
 .session3 .card:hover i {
   top: 0;
   transition: 0.2s ease-out;
+}
+figure {
+  position: relative;
+}
+.proyectos-destacados figure img::after,
+.proyectos-destacados figure img::before {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    rgba(5, 150, 105, 0) 0%,
+    rgba(5, 150, 105, 1) 100%
+  );
+  position: absolute;
+  top: 0;
+  animation: 4s infinite bar;
+}
+@keyframes bar {
+  0% {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+  }
+  25% {
+    top: 0;
+    left: calc(100% - 3px);
+    width: 3px;
+    height: 100%;
+  }
+  50% {
+    top: calc(100% - 3px);
+    left: calc(100% - 100%);
+    width: 100%;
+    height: 3px;
+  }
+  75% {
+    top: calc(100% - 100%);
+    left: 0;
+    width: 3px;
+    height: 100%;
+  }
+  100% {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+  }
+}
+.header-active {
+  width: clamp(10rem, 100%, 15rem);
+  background: linear-gradient(
+    90deg,
+    rgba(5, 150, 105, 0) 0%,
+    rgb(17, 17, 17) 100%
+  );
+  transition: 0.2s ease-in;
+}
+.span-active {
+  animation: button-animation 0.2s forwards;
+  transition: all 0.2s linear;
+}
+@keyframes button-animation {
+  from {
+    transform: rotate(180deg);
+    left: 0;
+  }
+  to {
+    transform: rotate(360deg);
+    left: 80%;
+  }
+}
+.span-2-active {
+  display: none;
+}
+.span-1-active {
+  animation: span-rotate 0.2s forwards;
+}
+@keyframes span-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(45deg);
+  }
+}
+.span-3-active {
+  animation: span-rotate-3 0.2s forwards;
+  position: absolute;
+  transition: all 0.2s;
+}
+@keyframes span-rotate-3 {
+  from {
+    transform: rotate(0deg);
+    top: 0;
+  }
+  to {
+    transform: rotate(135deg);
+  }
+}
+.header.menu-open nav ol li a:hover > label {
+  display: none;
 }

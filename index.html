@@ -13,19 +13,34 @@
 
 <body class="size-full overflow-x-hidden p-0 mx-0">
     <header id="header"
-        class="h-screen w-10 rounded-e-2xl text-neutral-50 flex overflow-x-hidden items-start justify-center pt-10 gap-7 fixed z-50 top-0 left-0 mr-10">
+        class=" header h-screen  rounded-e-2xl text-neutral-50 flex overflow-x-hidden items-start justify-center pt-10 gap-7 fixed z-50 top-0 left-0 mr-10">
         <nav>
-            <button class="button-tougle ">
-                <span class="span-tougle"></span>
-                <span class="span-tougle"></span>
-                <span class="span-tougle"></span>
+            <button class="button-toggle ">
+                <span class="span-toggle span-1"></span>
+                <span class="span-toggle span-2"></span>
+                <span class="span-toggle span-3"></span>
             </button>
             <ol>
-                <li><a href="#"><i class="fa-solid fa-house"></i>Inicio</a></li>
-                <li><a href="#"><i class="fa-regular fa-circle-user"></i>Sobre mi</a></li>
-                <li><a href="#"><i class="fa-solid fa-code"></i>Proyectos</a></li>
-                <li><a href="#"><i class="fa-brands fa-whatsapp"></i> whatsapp</a></li>
-                <li><a href="#"><i class="fa-brands fa-github"></i>whatsapp</a></li>
+                <li><a href="#"><i class="fa-solid fa-house"></i> Inicio
+                        <label class="label-header" for=""> <b>Incio</b></label>
+                    </a>
+                </li>
+                <li><a href="#"><i class="fa-regular fa-circle-user"></i>Sobre mi
+                        <label class="label-header  label " for=""><b>Sobre mi</b></label>
+                    </a>
+                </li>
+                <li><a href="#"><i class="fa-solid fa-code"></i>Proyectos
+                        <label class="label-header label" for=""><b>proyecto</b></label>
+                    </a>
+                </li>
+                <li><a href="#"><i class="fa-brands fa-whatsapp"></i> Whatsapp
+                        <label class="label-header label" for=""><b>Whatsapp</b></label>
+                    </a>
+                </li>
+                <li><a href="#"><i class="fa-brands fa-github"></i>Github
+                        <label class="label-header" for=""><b>github</b></label>
+                    </a>
+                </li>
             </ol>
         </nav>
     </header>
@@ -51,7 +66,7 @@
                                 quidem
                                 molestias, possimus aliquid veritatis blanditiis delectus?</p>
                         </div>
-                        <div class="">
+                        <div class="proyectos-destacados">
                             <h4 class="text-neutral-50 font-bold text-center m-2 text-xl">Proyectos destacados</h4>
                             <figure class="flex w-full items-center justify-center gap-5 ">
                                 <img src="img/undraw_about_me_re_82bv.svg" class="w-2/5" alt="">
@@ -65,9 +80,9 @@
             <img src="img/hexagon-01-stroke-rounded.svg" class="absolute w-1/5 right-3 top-0 rotate-90 z-10" alt="">
             <img src="img/hexagon-01-stroke-rounded.svg" class="absolute w-1/5 right-40 top-0 z-10 " alt="">
         </section>
-        <section class="session3 w-screen h-screen flex pt-20 gap-20 text-neutral-50 flex-col items-center">
+        <section class="session3 w-screen h-screen flex pt-20 gap-20 text-neutral-50 flex-col items-center relative">
             <h2 class="font-bold text-4xl">Proyectos</h2>
-            <div class="grid grid-cols-2 gap-10 w-4/5 h-full  ">
+            <div class="grid grid-cols-2 gap-10 w-4/5 h-full   relative bottom-9">
                 <div class="card">
                     <img src="" alt="" class="w-full h-full cover absolute">
                     <a href="#"><i class="fa-solid fa-code"></i></a>
@@ -83,7 +98,7 @@
                     <p class="parrafo-card">Blanditiis possimus nesciunt accusantium sequi dolorem id tempora provident
                         aperiam?</p>
                 </div>
-                <div class="card">
+                <div class="card ">
                     <img src="" alt="">
                     <a href="#"><i class="fa-solid fa-code"></i></a>
                     <a href="#"><i class="fa-brands fa-github"></i></a>
@@ -98,10 +113,15 @@
                     </p>
                 </div>
             </div>
+            <img src="img/hexagon-01-stroke-rounded.svg" class="absolute w-1/5 left-9 bottom-0 rotate-90 z-10" alt="">
+            <img src="img/hexagon-01-stroke-rounded.svg" class="absolute w-1/5 left-40 bottom-0 z-10 " alt="">
+            <img src="img/hexagon-01-stroke-rounded.svg" class="absolute w-1/5 right-4 top-9 rotate-90 z-10" alt="">
+            <img src="img/hexagon-01-stroke-rounded.svg" class="absolute w-1/5 right-40 top-9 z-10 " alt="">
         </section>
         <section class="session4"></section>
         <section class="session5"></section>
     </main>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
