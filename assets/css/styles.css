@@ -354,6 +354,9 @@ figure img:hover {
   left: 90%;
   padding: 1rem;
 }
+.card .icon-left {
+  left: 85%;
+}
 .session3 .card:hover i {
   top: 0;
   transition: 0.2s ease-out;
