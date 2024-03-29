@@ -8,10 +8,9 @@
     <script src="https://kit.fontawesome.com/cea33d77ef.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/normalize.css">
-
 </head>
 
-<body class="size-full overflow-x-hidden p-0 mx-0">
+<body class="size-full overflow-x-hidden overflow-y-scroll p-0 mx-0">
     <header id="header"
         class=" header h-screen  rounded-e-2xl text-neutral-50 flex overflow-x-hidden items-start justify-center pt-10 gap-7 fixed z-50 top-0 left-0 mr-10">
         <nav>
@@ -21,40 +20,45 @@
                 <span class="span-toggle span-3"></span>
             </button>
             <ol>
-                <li><a href="#"><i class="fa-solid fa-house"></i> Inicio
+                <li><a href="#inicio"><i class="fa-solid fa-house"></i> Inicio
                         <label class="label-header" for=""> <b>Incio</b></label>
                     </a>
                 </li>
-                <li><a href="#"><i class="fa-regular fa-circle-user"></i>Sobre mi
+                <li><a href="#sobre-mi"><i class="fa-regular fa-circle-user"></i>Sobre mi
                         <label class="label-header  label " for=""><b>Sobre mi</b></label>
                     </a>
                 </li>
-                <li><a href="#"><i class="fa-solid fa-code"></i>Proyectos
+                <li><a href="#proyectos"><i class="fa-solid fa-code"></i>Proyectos
                         <label class="label-header label" for=""><b>proyecto</b></label>
                     </a>
                 </li>
-                <li><a href="#"><i class="fa-brands fa-whatsapp"></i> Whatsapp
+                <li><a href="https://wa.me/59895937863" target="_blank"><i class="fa-brands fa-whatsapp"></i>
+                        Whatsapp
                         <label class="label-header label" for=""><b>Whatsapp</b></label>
                     </a>
                 </li>
-                <li><a href="#"><i class="fa-brands fa-github"></i>Github
+                <li><a href="https://github.com/alter2312" target="blank"><i class="fa-brands fa-github"></i>Github
                         <label class="label-header" for=""><b>github</b></label>
                     </a>
                 </li>
+
             </ol>
         </nav>
     </header>
     <main>
-        <section class="presentacion w-screen h-screen flex items-center justify-center flex-col   ">
+        <section id="inicio" class="presentacion w-screen h-screen flex items-center justify-center flex-col   ">
             <h5 class="text-4xl text-teal-800">Desarrollador web front end </h5>
             <h1 class="text-8xl  font-bold text-neutral-50">Alter <span class="text-emerald-400">Olsztyn</span></h1>
             <div class="flex gap-10 mt-10">
                 <a href="" class="px-10 py-3 bg-emerald-600 font-bold rounded-3xl text-neutral-50 text-xl">button</a>
                 <a href="" class="px-10 py-3 bg-emerald-600 font-bold rounded-3xl text-neutral-50 text-xl">button</a>
             </div>
-            <img src="img/icon-7.svg" class=" w-16 relative top-5" alt="">
+            <a href="#sobre-mi">
+                <img src="img/icon-7.svg" class="arrow-down w-16 relative top-5" alt="">
+            </a>
         </section>
-        <section class="sobre-mi w-scrren h-screen bg-neutral-950 flex flex-col items-center gap-10 py-10 relative ">
+        <section id="sobre-mi"
+            class="sobre-mi w-scrren h-screen bg-neutral-950 flex flex-col items-center gap-10 py-10 relative ">
             <h2 class="text-4xl text-neutral-50  font-bold ">Sobre mi</h2>
             <div class="w-screen flex items-center justify-around  h-4/5 ">
                 <div class=" flex flex-items-center justify-center gap-20 px-10">
@@ -68,7 +72,11 @@
                         </div>
                         <div class="proyectos-destacados">
                             <h4 class="text-neutral-50 font-bold text-center m-2 text-xl">Proyectos destacados</h4>
-                            <figure class="flex w-full items-center justify-center gap-5 ">
+                            <figure class="flex w-full items-center justify-center gap-10 ">
+                                <span class="span-top"></span>
+                                <span class="span-right"></span>
+                                <span class="span-bottom"></span>
+                                <span class="span-left"></span>
                                 <img src="img/undraw_about_me_re_82bv.svg" class="w-2/5" alt="">
                                 <img src="img/undraw_about_me_re_82bv.svg" class="w-2/5" alt="">
                             </figure>
@@ -80,7 +88,8 @@
             <img src="img/hexagon-01-stroke-rounded.svg" class="absolute w-1/5 right-3 top-0 rotate-90 z-10" alt="">
             <img src="img/hexagon-01-stroke-rounded.svg" class="absolute w-1/5 right-40 top-0 z-10 " alt="">
         </section>
-        <section class="session3 w-screen h-screen flex pt-20 gap-20 text-neutral-50 flex-col items-center relative">
+        <section id="proyectos"
+            class="session3 w-screen h-screen flex pt-20 gap-20 text-neutral-50 flex-col items-center relative">
             <h2 class="font-bold text-4xl">Proyectos</h2>
             <div class="grid grid-cols-2 gap-10 w-4/5 h-full   relative bottom-9">
                 <div class="card">
