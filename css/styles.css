@@ -211,8 +211,9 @@ nav ol li a i {
 /* inicio section sobre mi */
 
 .content-text {
-  box-shadow: 10px 0px 10px #059669, 10px 0px 20px #059669,
-    10px 0px 30px #059669, 10px 0px 40px #059669;
+  text-wrap: pretty;
+  box-shadow: 10px 5px 10px #030303, 10px 5px 10px #030303,
+    10px 10px 10px #030303, 20px 10px 10px #030303;
 }
 figure {
   position: relative;
