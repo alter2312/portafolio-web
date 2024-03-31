@@ -303,19 +303,16 @@ figure span {
     transform: translatex(-100%);
   }
 }
-figure img {
+#sobre-mi figure img {
   border-radius: 2rem;
 }
-figure img:hover {
+#sobre-mi figure img:hover {
   transform: scale(1.2);
   transition: 0.2s;
 }
 /* fin style section sobre mi */
 /* inicio style section proyecto */
 
-.session3 {
-  background-color: #030303;
-}
 .parrafo-card {
   width: 80%;
   position: absolute;
@@ -362,3 +359,70 @@ figure img:hover {
   transition: 0.2s ease-out;
 }
 /* fin section proyectos */
+/* SESCTION NEO KARATE */
+.session4 {
+  background-color: #030303;
+}
+
+.session4 .galeria-neo-karate img {
+  width: 4rem;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2rem;
+  transition: width 0.3s;
+}
+.session4 .galeria-neo-karate img:hover {
+  width: 100%;
+  /* object-fit: fill; */
+}
+.session4 .galeria-neo-karate {
+  justify-content: center;
+  overflow: visible;
+}
+.session4 article article {
+  box-shadow: 0px 0px 10px #f1f1f1, 0px 0px 10px #f1f1f1, 0px 0px 10px #f1f1f1,
+    0px 0px 10px #f1f1f1;
+
+  border-radius: 2rem;
+  padding: 4rem;
+  box-sizing: border-box;
+}
+.session4 article div a span {
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, rgba(5, 150, 105, 0) 0%, #059669);
+  position: absolute;
+  top: 97%;
+  animation: 2s infinite bar;
+}
+.session4 article div a {
+  width: 60%;
+}
+.session4 article div a:hover {
+  background: #059669;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 10px #059669, 0px 0px 10px #059669, 0px 0px 10px #059669,
+    0px 0px 10px #059669;
+  color: #f1f1f1;
+  transition: 0.4s ease-in-out;
+}
+@keyframes bar {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+.container-img-neo-karate {
+  height: 80%;
+}
+.container-img-neo-karate img {
+  width: calc(100% / 10);
+  filter: grayscale(1);
+}
+.container-img-neo-karate img:hover {
+  filter: grayscale(0);
+  transform: scale(1.1);
+  transition: 0.2s ease-in;
+}
