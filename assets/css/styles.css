@@ -482,7 +482,7 @@ figure span {
   }
 
   #sobre-mi .container-sobre-mi .content-container-sobre-mi .content-text p {
-    font-size: clamp(3vw, 10vw, 6vw);
+    font-size: clamp(3vw, 2vw, 6vw);
   }
   #sobre-mi > div > img {
     right: auto;
