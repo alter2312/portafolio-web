@@ -441,6 +441,9 @@ figure span {
     min-height: 100vh;
     height: auto;
   }
+  #sobre-mi h2 {
+    font-size: clamp(8vw, 10vw, 5vw);
+  }
   .container-sobre-mi {
     display: flex;
     flex-direction: column;
