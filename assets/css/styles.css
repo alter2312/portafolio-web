@@ -585,7 +585,7 @@ figure span {
     top: auto;
     height: (auto, 10vh, auto);
     padding: 1rem 2rem;
-    height: 20%;
+    height: auto;
     margin: 0;
   }
 
