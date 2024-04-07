@@ -429,6 +429,7 @@ figure span {
 @media (min-width: 0px) and (max-width: 640px) {
   main {
     overflow-x: hidden;
+    overflow-y: visible;
     margin-bottom: 14vh;
   }
   #header {
@@ -572,6 +573,13 @@ figure span {
   }
   .session4 article {
     flex-direction: column;
+    position: relative;
+  }
+  main
+    > section.session4.w-screen.h-screen.flex.items-center.flex-col.justify-center.relative.pt-20
+    > article
+    > div {
+    position: ;
   }
   body
     > main
@@ -585,7 +593,6 @@ figure span {
     top: auto;
     height: (auto, 10vh, auto);
     padding: 1rem 2rem;
-    height: auto;
     margin: 0;
   }
 
