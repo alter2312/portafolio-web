@@ -698,4 +698,7 @@ figure span {
   #proyectos > img.absolute {
     display: none;
   }
+  #proyectos > .grid {
+    grid-template-columns: 1fr;
+  }
 }
