@@ -567,7 +567,9 @@ figure span {
     min-width: 7rem;
   }
 
-  .session4 {
+  body
+    > main
+    > section.session4.w-screen.h-screen.flex.items-center.flex-col.justify-center.relative.pt-20 {
     height: auto;
     overflow-y: visible;
     position: relative;
