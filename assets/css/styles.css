@@ -220,6 +220,9 @@ figure {
   height: 10rem;
   overflow: hidden;
 }
+.img-yo {
+  filter: drop-shadow(31px -22px 15px #059669);
+}
 figure span {
   height: 2px;
   width: 100%;
@@ -315,7 +318,7 @@ figure span {
   top: 200%;
 }
 .session3 .card {
-  background-color: #0a0a0a;
+  background-color: #030303;
   border-radius: 1.5rem;
   position: relative;
   display: flex;
@@ -426,14 +429,71 @@ figure span {
 @media (min-width: 0px) and (max-width: 640px) {
   main {
     overflow-x: hidden;
+    margin-bottom: 14vh;
   }
   #header {
     width: 100%;
-    height: 4rem;
-    top: 100vmin;
+    height: 14vh;
+    top: 86vh;
     border-radius: 0;
-    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 0;
+    overflow: hidden;
+    /* display: none; */
   }
+  #header > nav > ol {
+    display: flex;
+    flex-direction: row;
+    top: auto;
+    left: auto;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  #header > nav > button {
+    position: relative;
+    top: auto;
+    left: auto;
+  }
+  #header > nav {
+    display: flex;
+    flex-direction: row;
+
+    width: 90%;
+    overflow: hidden;
+  }
+  #header > nav > ol li {
+    width: auto;
+    height: auto;
+  }
+  #header > nav > ol li a {
+    padding: 0;
+  }
+
+  /* fin style header movile */
+  /* style incio movile */
+  #inicio {
+    height: 90vh;
+  }
+  #inicio img {
+    width: 3rem;
+  }
+  #inicio > div {
+    gap: 1rem;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+  }
+  #inicio > div > a {
+    text-align: center;
+    font-size: 0.7rem;
+    padding: 0.5rem 1.2rem;
+  }
+  /* fin style incio movile */
+
   #sobre-mi {
     display: flex;
     flex-direction: column;
@@ -446,7 +506,7 @@ figure span {
   }
   .container-sobre-mi {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
     height: 80%;
@@ -467,14 +527,13 @@ figure span {
     position: relative;
     height: 60%;
     right: auto;
-    padding-top: 4rem;
   }
   #sobre-mi .container-sobre-mi .content-container-sobre-mi .content-text {
     width: 100%;
-    height: auto;
+    height: clamp(auto, 10vh, auto);
   }
   #sobre-mi .container-sobre-mi .content-container-sobre-mi .content-text h3 {
-    font-size: clamp(7vw, 10vw, 5vw);
+    font-size: clamp(5vw, 4vw, 7vw);
     margin: 0;
     padding: 0;
     width: auto;
@@ -483,7 +542,13 @@ figure span {
   #sobre-mi > img.absolute.w-1\/5 {
     display: none;
   }
-
+  #sobre-mi > div > div > div {
+    padding: 0;
+    gap: 4rem;
+  }
+  #sobre-mi > div > div > div > div.proyectos-destacados > h3 {
+    font-size: clamp(5vw, 4vw, 7vw);
+  }
   #sobre-mi .container-sobre-mi .content-container-sobre-mi .content-text p {
     font-size: clamp(3vw, 2vw, 6vw);
   }
@@ -492,8 +557,131 @@ figure span {
     width: 50%;
     border-radius: 100%;
     height: 50%;
+    min-width: 15rem;
+    margin-top: 1rem;
+  }
+  #sobre-mi > div > div > div > div.proyectos-destacados > figure > img {
+    height: auto;
+    min-height: 4rem;
+    min-width: 7rem;
+  }
+
+  .session4 {
+    height: auto;
+    overflow-y: visible;
   }
   .session4 article {
     flex-direction: column;
+  }
+  body
+    > main
+    > section.session4.w-screen.h-screen.flex.items-center.flex-col.justify-center.relative.pt-20
+    > article
+    > div
+    > article {
+    width: 90vw;
+    position: relative;
+    left: auto;
+    top: auto;
+    height: (auto, 10vh, auto);
+    padding: 1rem 2rem;
+    height: 20%;
+    margin: 0;
+  }
+
+  body
+    > main
+    > section.session4.w-screen.h-screen.flex.items-center.flex-col.justify-center.relative.pt-20
+    > article
+    > div
+    > article
+    > p {
+    font-size: clamp(3vw, 2vw, 6vw);
+  }
+  body
+    > main
+    > section.session4.w-screen.h-screen.flex.items-center.flex-col.justify-center.relative.pt-20
+    > article
+    > div
+    > article
+    > h3 {
+    position: relative;
+    left: auto;
+    top: auto;
+    margin: 0;
+    padding: 0;
+    font-size: clamp(5vw, 4vw, 7vw);
+  }
+  body > main > section.session4 > article > div > div > h5 {
+    font-size: clamp(5vw, 10vw, 7vw);
+    width: 100vw;
+    text-align: center;
+  }
+  body
+    > main
+    > section.session4.w-screen.h-screen.flex.items-center.flex-col.justify-center.relative.pt-20
+    > article
+    > div
+    > div
+    > figure {
+    width: 90vw;
+
+    display: flex;
+    flex-wrap: wrap;
+  }
+  body
+    > main
+    > section.session4.w-screen.h-screen.flex.items-center.flex-col.justify-center.relative.pt-20
+    > article
+    > div
+    > div
+    > figure
+    img {
+    height: 3rem;
+    display: grid;
+    place-items: center;
+  }
+  body
+    > main
+    > section.session4.w-screen.h-screen.flex.items-center.flex-col.justify-center.relative.pt-20
+    > article
+    > figure {
+    width: 100vw;
+    position: relative;
+    height: auto;
+
+    top: auto;
+    right: auto;
+    bottom: auto;
+    align-items: center;
+    flex-direction: column;
+  }
+  body
+    > main
+    > section.session4.w-screen.h-screen.flex.items-center.flex-col.justify-center.relative.pt-20
+    > article
+    > figure
+    > img {
+    width: 80%;
+    margin: 0;
+    height: 20%;
+  }
+  body
+    > main
+    > section.session4.w-screen.h-screen.flex.items-center.flex-col.justify-center.relative.pt-20
+    > article
+    > div
+    > article
+    > a
+    :hover {
+    text-align: center;
+    font-size: 0.7rem;
+    padding: 0.5rem 1.2rem;
+  }
+  .session3 h2 {
+    font-size: clamp(8vw, 10vw, 5vw);
+  }
+  #proyectos > img.absolute {
+    display: none;
   }
 }
