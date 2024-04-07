@@ -570,16 +570,21 @@ figure span {
   .session4 {
     height: auto;
     overflow-y: visible;
+    position: relative;
   }
   .session4 article {
     flex-direction: column;
     position: relative;
   }
+  .session4 h2 {
+    position: relative;
+    top: auto;
+  }
   main
     > section.session4.w-screen.h-screen.flex.items-center.flex-col.justify-center.relative.pt-20
-    > article
-    > div {
-    position: ;
+    > article {
+    gap: 0;
+    position: relative;
   }
   body
     > main
