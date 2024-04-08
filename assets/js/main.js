@@ -1,5 +1,5 @@
 const header =  document.querySelector("#header");
-const botonHeader = document.querySelector(".button-toggle"); 
+const botonHeader = document.querySelector("#toggle"); 
 const span1 = document.querySelector(".span-1");
 const span2 = document.querySelector(".span-2");
 const span3 = document.querySelector(".span-3");

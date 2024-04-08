@@ -1,10 +1,12 @@
 <!doctype html>
-<html>
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="descrption" content="Portafolio web de Alter Olsztyn">
+    <meta name="author" class="Alter Olsztyn">
     <script src="https://kit.fontawesome.com/cea33d77ef.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/normalize.css">
@@ -15,7 +17,7 @@
     <header id="header"
         class=" header h-screen  rounded-e-2xl text-neutral-50 flex overflow-x-hidden items-start justify-center pt-10 gap-7 fixed z-50 top-0 left-0 mr-10">
         <nav>
-            <button class="button-toggle ">
+            <button id="toggle" title="menu">
                 <span class="span-toggle span-1"></span>
                 <span class="span-toggle span-2"></span>
                 <span class="span-toggle span-3"></span>
@@ -57,7 +59,8 @@
                     class="px-10 py-3 bg-neutral-950 font-bold rounded-2xl text-neutral-50 text-xl hover:bg-emerald-700 transition duration-300	ease-out">Proyectos</a>
             </div>
             <a href="#sobre-mi">
-                <img src="assets/img/icon-7.svg" class="arrow-down w-16 relative top-5" alt="">
+                <img src="assets/img/icon-7.svg" class="arrow-down w-16 relative top-5" aria-label="Sobre mi"
+                    alt="sobre mi">
             </a>
         </section>
         <section id="sobre-mi"

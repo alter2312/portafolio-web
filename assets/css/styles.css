@@ -23,7 +23,7 @@ body::-webkit-scrollbar-thumb {
   overflow-y: auto;
   transition: width 0.2s linear;
 }
-.button-toggle {
+#toggle {
   width: 2.6rem;
   height: 2.4rem;
   display: flex;
@@ -36,11 +36,11 @@ body::-webkit-scrollbar-thumb {
   position: absolute;
   left: 0.6rem;
 }
-.button-toggle:hover span {
+#toggle:hover span {
   background-color: #059669;
   transition: 0.2s linear;
 }
-.button-toggle span {
+#toggle span {
   width: 100%;
   height: 0.5rem;
   background-color: #f1f1f1;
