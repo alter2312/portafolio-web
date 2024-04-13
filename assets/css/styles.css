@@ -430,12 +430,11 @@ figure span {
   main {
     overflow-x: hidden;
     overflow-y: visible;
-    margin-bottom: 14vh;
   }
   #header {
     width: 100%;
-    height: 14vh;
-    top: 86vh;
+    height: 10vh;
+    top: 90vh;
     border-radius: 0;
     display: flex;
     align-items: center;
@@ -446,16 +445,19 @@ figure span {
     /* display: none; */
   }
   #header > nav > ol {
-    display: flex;
-    flex-direction: row;
-    top: auto;
-    left: auto;
+    position: fixed;
+    width: 100vw;
+    height: 90vh;
+    top: 0;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: relative;
+    background: #030303;
+    left: -100%;
+    transition: left 0.2s;
   }
   #header > nav > button {
-    position: relative;
+    position: absolute;
     top: auto;
     left: auto;
   }
@@ -466,6 +468,7 @@ figure span {
     width: 90%;
     overflow: hidden;
   }
+
   #header > nav > ol li {
     width: auto;
     height: auto;
@@ -473,7 +476,9 @@ figure span {
   #header > nav > ol li a {
     padding: 0;
   }
-
+  #header .ol-active {
+    left: 0;
+  }
   /* fin style header movile */
   /* style incio movile */
   #inicio {
@@ -585,7 +590,7 @@ figure span {
   main
     > section.session4.w-screen.h-screen.flex.items-center.flex-col.justify-center.relative.pt-20
     > article {
-    gap: 0;
+    gap: 3rem;
     position: relative;
   }
   body
@@ -600,7 +605,7 @@ figure span {
     top: auto;
     height: (auto, 10vh, auto);
     padding: 1rem 2rem;
-    margin: 0;
+    margin-bottom: 3rem;
   }
 
   body
@@ -624,12 +629,14 @@ figure span {
     top: auto;
     margin: 0;
     padding: 0;
-    font-size: clamp(5vw, 4vw, 7vw);
+    font-size: clamp(7vw, 10vw, 7vw);
+    font-weight: bold;
   }
   body > main > section.session4 > article > div > div > h5 {
-    font-size: clamp(5vw, 10vw, 7vw);
+    font-size: clamp(5vw, 2vw, 7vw);
     width: 100vw;
     text-align: center;
+    color: #f1f1f1;
   }
   body
     > main
@@ -639,9 +646,9 @@ figure span {
     > div
     > figure {
     width: 90vw;
-
     display: flex;
     flex-wrap: wrap;
+    gap: 1rem;
   }
   body
     > main
@@ -651,9 +658,7 @@ figure span {
     > div
     > figure
     img {
-    height: 3rem;
-    display: grid;
-    place-items: center;
+    height: 2rem;
   }
   body
     > main
@@ -680,17 +685,18 @@ figure span {
     margin: 0;
     height: 20%;
   }
+
   body
     > main
     > section.session4.w-screen.h-screen.flex.items-center.flex-col.justify-center.relative.pt-20
     > article
     > div
     > article
-    > a
-    :hover {
-    text-align: center;
+    > a {
+    width: 40%;
+    height: 2rem;
+    margin: 2rem 0;
     font-size: 0.7rem;
-    padding: 0.5rem 1.2rem;
   }
   .session3 h2 {
     font-size: clamp(8vw, 10vw, 5vw);
