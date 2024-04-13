@@ -431,6 +431,7 @@ figure span {
     overflow-x: hidden;
     overflow-y: visible;
     padding-bottom: 10vh;
+    background: #030303;
   }
   #header {
     width: 100%;
